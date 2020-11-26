@@ -13,16 +13,16 @@ There are further more queries need to be done after the update query but for so
     - Dirty Reads
   
         ![Dirty read](/images/dirty_read.PNG)
-<br>
+
 
     - Non-repeatable read
   
         ![Non-repeatable read](/images/non-repeatable.PNG)
-<br>
+
     - Phantom read
   
         ![phantom-read](/images/phantom_read.PNG)
-<br>
+
 - Isolation Levels
   - Read uncommitted -> No isolation. Any change from the outside is visible to the transaction.
   - Read committed -> Each query in a transaction only sees committed stuff.
@@ -30,7 +30,7 @@ There are further more queries need to be done after the update query but for so
   - Serializable -> Trasnactions are serialized.
   
     ![Isolation levels vs read phenomena](/images/isolation_read.PNG)
-<br>
+
 ## 3. Consistency
 - Consistency in Data
   - Defined by the user
@@ -39,8 +39,7 @@ There are further more queries need to be done after the update query but for so
   - Isolation
   
     ![consistency in data](images/consistency.png)
-<br>
-<br>
+
 - Consistency in reads
   - If a tansaction committed a change will a new transaction immediately see the change?
   - Relational and NoSQL databases suffer from this
