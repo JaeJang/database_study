@@ -49,3 +49,25 @@ There are 1NF ~ 6NF, but in practice, it usually goes through 1NF ~ 3NF normaliz
 
   ![1NF](/images/1nf_1.png)  
   *One-to-many relationship between Customer Name and Customer Telephone Number*
+
+<br>
+
+### Second Normal Form, 2NF
+When 2NF has completed, all columns in the table satisfy a fully functional dependency.
+
+- Functional Dependency - When The value of X determines value Y, it is expressed as X -> Y, which is called Functional Dependency. For example, if we know a student ID, we can also know the name of the student, and in this case, the student ID is X and the name is Y. X is called the determiner and Y is the dependent. In other words, if X is changed, Y must be changed.
+  
+- when the value of X is multiple elements, {X1, X2} -> Y, it is called Fully Functional Dependency when both X1 and X2 determine the value of, and if only one of X1 and X2 determines the value of Y, it is called Partial Functional Dependency.
+
+<br>
+
+![2NF](/images/2nf_1.png)  
+*2NF Not Satisfied*
+
+{Model, Manufacturer} -> Model Full Name - Fully Functional Dependency
+
+{Model, Manufacturer} -> Manufacturer Country - Model and Manufacturer Country have no relation, Manufacturer Country is dependent on Manufacturer only - Partial Functional Dependency
+<br>
+
+![2NF](/images/2nf_2.png)  
+*2NF Satisfied*
