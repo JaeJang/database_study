@@ -49,7 +49,6 @@ There are 1NF ~ 6NF, but in practice, it usually goes through 1NF ~ 3NF normaliz
 
   ![1NF](/images/1nf_1.png)  
   *One-to-many relationship between Customer Name and Customer Telephone Number*
-
 <br>
 
 ### Second Normal Form, 2NF
@@ -71,3 +70,23 @@ When 2NF has completed, all columns in the table satisfy a fully functional depe
 
 ![2NF](/images/2nf_2.png)  
 *2NF Satisfied*
+
+<br>
+
+### Third Normal Form, 3NF
+- The relation is in second normal form
+- Every non-prime attribute of the relation is non-transitively dependent on every key of R
+
+> *Transitive dependency*
+>
+>  When A -> B, B-> C, A -> C is established
+
+![3NF](/images/3nf_1.png)
+*3NF Not Statisfied*
+
+{Tournament, Year} -> Minimal set of attributes guranteed to uniquely identify a row
+
+ The fact that Winner's date of birth is functionally dependent on Winner makes the table vulnerable to logical inconsistencies, as there is nothing to stop the same person from being shown with different dates of birth on different records.
+
+ ![3NF](/images/3nf_2.png)
+*3NF Statisfied*
